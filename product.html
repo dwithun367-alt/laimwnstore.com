@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Products</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f8f1e7;
+      overflow-x:hidden;
+    }
+
+    /* ================= NAVBAR ================= */
+
+    nav{
+      width:100%;
+      height:80px;
+      background:#fffaf3;
+
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+
+      padding:0 40px;
+
+      box-shadow:0 2px 10px rgba(0,0,0,0.08);
+
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
+
+   .logo{
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+   .logo img{
+  width:100px;
+  height:100px;
+  position:absolute;
+  top:3px;
+  left:1px;   
+
+  display:flex;
+  align-items:center;
+  gap:8px;
+    }
+
+    .menu{
+      display:flex;
+      gap:25px;
+    }
+
+    .menu a{
+      text-decoration:none;
+      color:#6b4f3b;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .menu a:hover{
+      color:#d4a373;
+    }
+
+    /* ================= TITLE ================= */
+
+    .title{
+      text-align:center;
+      padding:50px 20px 20px;
+    }
+
+    .title h1{
+      font-size:45px;
+      color:#6b4f3b;
+
+      animation:fadeDown 1s ease;
+    }
+
+    @keyframes fadeDown{
+      from{
+        opacity:0;
+        transform:translateY(-40px);
+      }
+
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    /* ================= PRODUCTS ================= */
+
+    .products{
+      width:100%;
+
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+
+      gap:35px;
+
+      padding:40px;
+    }
+
+    /* PRODUCT CARD */
+
+    .card{
+      width:270px;
+
+      background:#fffaf3;
+
+      border-radius:20px;
+
+      overflow:hidden;
+
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+
+      transition:1s
+
+      animation:fadeUp 1s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-12px) scale(1.03);
+
+      box-shadow:0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    @keyframes fadeUp{
+      from{
+        opacity:0;
+        transform:translateY(50px);
+      }
+
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    /* PRODUCT IMAGE */
+
+    .card img{
+      width:100%;
+      height:280px;
+
+      object-fit:cover;
+
+      transition:0.4s;
+    }
+
+    .card:hover img{
+      transform:scale(1.08);
+    }
+
+    /* PRODUCT INFO */
+
+    .info{
+      padding:20px;
+      text-align:center;
+    }
+
+    .info h2{
+      color:#6b4f3b;
+      margin-bottom:10px;
+    }
+
+    .price{
+      color:#b07d52;
+      font-size:20px;
+      font-weight:bold;
+      margin-bottom:15px;
+    }
+
+    /* BUTTON */
+
+    .info button{
+      padding:12px 25px;
+
+      border:none;
+      border-radius:10px;
+
+      background:#d4a373;
+
+      color:white;
+
+      font-size:15px;
+
+      cursor:pointer;
+
+      transition:0.3s;
+    }
+
+    .info button:hover{
+      background:#b07d52;
+
+      transform:scale(1.05);
+    }
+  
+  
+  </style>
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+
+  <nav>
+
+    <div class="logo">
+      <img src="logo.jpeg" alt="logo">
+    </div>
+
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="product.html">Cart</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+  </nav>
+
+  <!-- ================= TITLE ================= -->
+
+  <div class="title">
+    <h1>Our Products</h1>
+  </div>
+
+  <!-- ================= PRODUCTS ================= -->
+
+  <section class="products">
+
+    <!-- PRODUCT 1 -->
+
+    <div class="card">
+
+      <img src="product1.jpeg">
+
+      <div class="info">
+
+        <h2>Daorai Mwkwreb</h2>
+<p>Daorai Mwkwreb Agor Dhokona made with love and woven with pride</p>
+        <div class="price">₹ 599</div>
+
+        <button>Buy Now</button>
+
+      </div>
+
+    </div>
+
+    <!-- PRODUCT 2 -->
+
+    <div class="card">
+
+      <img src="product2.jpeg">
+
+      <div class="info">
+
+        <h2>Maidi Agor Gubwi plain</h2>
+        <p>Saoked in rice Water, handmade and hand woven</p>
+
+        <div class="price">₹699</div>
+
+        <button>Buy Now</button>
+
+      </div>
+
+    </div>
+
+    <!-- PRODUCT 3 -->
+
+    <div class="card">
+
+      <img src="product3.jpeg">
+
+      <div class="info">
+
+        <h2>Aronai waist Coat</h2>
+        <p></p>
+
+        <div class="price">₹999.99</div>
+
+        <button>Buy Now</button>
+</div>
+      </div>
+      <div class="card">
+
+      <img src="product4.jpeg">
+
+      <div class="info">
+
+        <h2>Daorai Mwkwreb</h2>
+<p>Daorai Mwkwreb Agor Dhokona made with love and woven with pride</p>
+        <div class="price">₹ 599</div>
+        <button>Buy Now</button>
+        </div>
+      </div>
+      <div class="card">
+
+      <img src="product5.jpeg">
+
+      <div class="info">
+
+        <h2>Daorai Mwkwreb</h2>
+<p>Daorai Mwkwreb Agor Dhokona made with love and woven with pride</p>
+        <div class="price">₹ 599</div>
+
+        <button>Buy Now</button>
+
+      </div>
+
+  </section>
+</body>
+</html>
